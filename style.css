@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(181, 233, 244);
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #1d72b8;
+}
+
+form {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+fieldset {
+  border: 1px solid #f6acde;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #bbf7fc;
+}
+
+legend {
+  color: #1d94b8;
+  border-bottom: 2px solid #f8bbdd;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #f4bce1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #f6b8f2;
+  color: #6550f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #003052;
+
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Resume Preview Styles */
+#resume-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#resume-preview h2 {
+  text-align: center;
+  color: #f4b6e9;
+  margin-bottom: 10px;
+}
+
+#resume-content {
+  padding: 20px;
+  border: 1px solid #f6b7e4;
+  border-radius: 8px;
+  background-color: #f8bde8;
+}
+
+#resume-content h3 {
+  color: #fe95db;
+  border-bottom: 2px solid #f2b0e3;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+#resume-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+#resume-content ul {
+  padding-left: 20px;
+}
+
+#resume-content ul li {
+  margin-bottom: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+  form {
+    padding: 20px;
+  }
+  
+  button {
+    font-size: 1em;
+  }
+
+  #resume-preview {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: calc(100% - 20px);
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  #resume-preview {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: calc(100% - 20px);
+  }
+
+  button {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+
+  #resume-preview {
+    padding: 8px;
+  }
+
+  #resume-content {
+    font-size: 0.9em;
+  }
+}
